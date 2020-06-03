@@ -1,0 +1,112 @@
+
+
+
+#myCanvas{
+	/* width: 100%;
+    height: 95%; */
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
+
+}
+
+
+body, html{
+	height: 100%;
+	margin: 0;
+}
+
+.display-1{
+    text-align: center;
+    display:none;
+}
+
+
+#menu-screen{
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+
+
+.nav-item{
+    margin: 0 50px;
+}
+
+.menu-buttons{
+    border-radius: 10rem;
+    width: 200px;
+    display:none;
+
+}
+
+/*----------------------------------*/
+
+
+
+@-webkit-keyframes MOVE-BG {
+	from {
+		-webkit-transform: translateX(0);
+	}
+	to { 
+		-webkit-transform: translateX(46px);
+	}
+}
+
+@keyframes MOVE-BG {
+	from {
+		transform: translateX(0);
+	}
+	to { 
+		transform: translateX(46px);
+	}
+}
+
+
+.loading {
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg{
+    position: absolute;
+    left: -46px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+	
+  background: -webkit-repeating-linear-gradient(
+    145deg,
+    #0099FF 1px,
+    #0099FF 2px,
+    #0099FF 11px,
+    #0099FF 12px,
+    #00CCFF 20px
+  );
+  background: repeating-linear-gradient(
+    -55deg,
+    #0099FF 1px,
+    #0099FF 2px,
+    #0099FF 11px,
+    #0099FF 12px,
+    #00CCFF 20px
+	);
+    
+    -webkit-animation-name: MOVE-BG;
+	-webkit-animation-duration: .6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	
+    animation-name: MOVE-BG;
+	animation-duration: .6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}

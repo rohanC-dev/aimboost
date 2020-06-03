@@ -1,0 +1,27 @@
+<%- include("../partials/header") %>
+
+<div class="loading animated fadeIn">
+    <div class="bg"></div>
+
+    <div id="menu-screen">
+        <h1 class="display-1">AimBoost</h1>
+        <br>
+        <div class="text-center">
+            <div class="menu-button-container">
+                <a id="default-play" class="btn btn-info btn-lg menu-buttons" href="/game/default">Play</a>
+            </div>
+            <br>
+            <div class="menu-button-container">
+                <a id="leaderboard" class="btn btn-info btn-lg menu-buttons" href="#">Leaderboard</a>
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-info btn-lg menu-buttons"  data-toggle="tooltip" data-placement="right"
+                    title="Sign Up to save your high score and add to the leaderboard!">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %>
