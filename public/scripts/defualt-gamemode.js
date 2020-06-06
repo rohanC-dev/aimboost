@@ -1,13 +1,10 @@
 var targetClickSound = new Howl({
-    src: "https://www.mboxdrive.com/piston-2.mp3",
-    html5: true,
-    format: ['mp3', 'aac']
+    src: "/sounds/piston-2.mp3",
+
 });
 
 var targetMissSound = new Howl({
-    src: "https://www.mboxdrive.com/flash-2.mp3",
-    html5: true,
-    format: ['mp3', 'aac']
+    src: "/sounds/flash-2.mp3",
 });
 
 var h1 = document.getElementById("stopWatch"),
